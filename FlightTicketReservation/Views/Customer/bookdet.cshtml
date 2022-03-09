@@ -1,0 +1,59 @@
+@model FlightTicketReservation.Models.BookingDetail
+
+@{
+    ViewData["Title"] = "bookdet";
+}
+
+<h1>bookdet</h1>
+
+<div>
+    <h4>BookingDetail</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Bookingid)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Bookingid)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Flightid)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Flightid)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Routeid)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Routeid)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Doj)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Doj)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Numberofpassengers)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Numberofpassengers)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Totalvalue)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Totalvalue)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Customerid)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Customerid)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="getallFlights">Back to List</a>
+</div>

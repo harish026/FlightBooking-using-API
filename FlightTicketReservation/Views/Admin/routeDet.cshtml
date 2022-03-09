@@ -1,0 +1,35 @@
+@model FlightTicketReservation.Models.RouteDetail
+
+@{
+    ViewData["Title"] = "routeDetails";
+}
+
+<h1>routeDetails</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Routeid)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Routeid)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Flightid)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Flightid)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Routedesc)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Routedesc)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "routeEdit", new {id = Model.Routeid}) |
+    <a asp-action="getallRoutes">Back to List</a>
+</div>

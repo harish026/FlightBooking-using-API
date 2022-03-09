@@ -1,0 +1,38 @@
+@model FlightTicketReservation.Models.RouteDetail
+
+@{
+    ViewData["Title"] = "routeDelete";
+}
+
+<h1>Delete the Route Detals:</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>RouteDetail</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Routeid)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Routeid)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Flightid)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Flightid)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Routedesc)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Routedesc)
+        </dd>
+    </dl>
+    
+    <form asp-action="routeDelete">
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="getallRoutes">Back to List</a>
+    </form>
+</div>

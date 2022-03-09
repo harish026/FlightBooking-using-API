@@ -1,0 +1,22 @@
+
+<form asp-action="Addnumbers">
+    <div>
+        <label id="first">first</label>
+        <input id="first" name="first"/>
+    </div>
+    <div>
+        <label id="second">second</label>
+        <input id="second" name="second"/>
+    </div>
+    <div>
+        <input type="submit" name="add" id="add" value="add">
+
+    </div>
+
+    @{
+        if(ViewBag.result!=null){
+            <h1>the result is : @ViewBag.result</h1>
+        }
+    }
+
+</form>
