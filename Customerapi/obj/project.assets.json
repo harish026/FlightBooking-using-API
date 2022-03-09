@@ -235,11 +235,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\h.a.cme5\\Desktop\\new\\Customerapi\\Customerapi.csproj",
+      "projectUniqueName": "C:\\Users\\h.a.cme5\\Desktop\\FlightBooking-using-API\\Customerapi\\Customerapi.csproj",
       "projectName": "Customerapi",
-      "projectPath": "C:\\Users\\h.a.cme5\\Desktop\\new\\Customerapi\\Customerapi.csproj",
+      "projectPath": "C:\\Users\\h.a.cme5\\Desktop\\FlightBooking-using-API\\Customerapi\\Customerapi.csproj",
       "packagesPath": "C:\\Users\\h.a.cme5\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\h.a.cme5\\Desktop\\new\\Customerapi\\obj\\",
+      "outputPath": "C:\\Users\\h.a.cme5\\Desktop\\FlightBooking-using-API\\Customerapi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\h.a.cme5\\AppData\\Roaming\\NuGet\\NuGet.Config"

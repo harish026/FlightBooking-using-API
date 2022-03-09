@@ -1,0 +1,25 @@
+@{
+    Layout="/Views/Shared/_AdminLayout.cshtml";
+}
+<style>
+    body{
+        background-color: aliceblue;
+        background-image: url("Images/one.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        font-family: sans-serif;
+    }
+    h1,h2{
+        text-align: center;
+    }
+</style>
+<h1>hello @ViewBag.adname</h1>
+<br>
+<h2>welcome to Flight ticket Booking</h2>
+<br>
+<br>
+<h1><a asp-action="getallFlights" class="btn btn-dark" style="length:20px">get the flight details</a></h1> &nbsp; &nbsp; &nbsp; 
+<h1><a asp-action="GetAllCustomers" class="btn btn-warning">get the Customer details</a></h1>
+
+

@@ -1,0 +1,88 @@
+@model IEnumerable<Flightbookingapi.Models.Flight>
+
+@{
+    Layout="/Views/Shared/_CustomerLayout.cshtml";
+    ViewData["Title"] = "GetAllFlights";
+}
+<style>
+    body{
+        background-color: aliceblue;
+        font-family: sans-serif;
+        text-align: center;
+    }
+    table{
+    width: 100%;
+    border: skyblue 2px solid;
+    }
+</style>
+
+<h1>hello @ViewBag.cname</h1>
+
+<h1>Available Flights</h1>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Fid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Source)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Dest)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Dtime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Atime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Seat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Source)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dest)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dtime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Atime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Seat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.ActionLink("Book", "Book", new { id=item.Fid }) 
+                @* @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ }) *@
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

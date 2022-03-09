@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\h.a.cme5\\Desktop\\new\\flight\\Flightapi\\Flightapi.csproj": {}
+    "C:\\Users\\h.a.cme5\\Desktop\\FlightBooking-using-API\\Flightapi\\Flightapi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\h.a.cme5\\Desktop\\new\\flight\\Flightapi\\Flightapi.csproj": {
+    "C:\\Users\\h.a.cme5\\Desktop\\FlightBooking-using-API\\Flightapi\\Flightapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\h.a.cme5\\Desktop\\new\\flight\\Flightapi\\Flightapi.csproj",
+        "projectUniqueName": "C:\\Users\\h.a.cme5\\Desktop\\FlightBooking-using-API\\Flightapi\\Flightapi.csproj",
         "projectName": "Flightapi",
-        "projectPath": "C:\\Users\\h.a.cme5\\Desktop\\new\\flight\\Flightapi\\Flightapi.csproj",
+        "projectPath": "C:\\Users\\h.a.cme5\\Desktop\\FlightBooking-using-API\\Flightapi\\Flightapi.csproj",
         "packagesPath": "C:\\Users\\h.a.cme5\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\h.a.cme5\\Desktop\\new\\flight\\Flightapi\\obj\\",
+        "outputPath": "C:\\Users\\h.a.cme5\\Desktop\\FlightBooking-using-API\\Flightapi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\h.a.cme5\\AppData\\Roaming\\NuGet\\NuGet.Config"

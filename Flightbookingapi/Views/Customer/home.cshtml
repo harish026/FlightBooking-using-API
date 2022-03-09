@@ -1,0 +1,49 @@
+@{
+    Layout="/Views/Shared/_CustomerLayout.cshtml";
+}
+<style>
+    body{
+        background-color: aliceblue;
+        font-family: sans-serif;
+        text-align: center;
+    }
+    .row{
+        background-color: black;
+        padding-left: 450px;
+    }
+</style>
+
+<div style="background-image: url('wwwroot/images/one.png');" class="homeb">
+<h1>hello @ViewBag.cname</h1>
+<br>
+<br>
+<h2>Welcome to Flight Booking System</h2>
+<br>
+<div class="row" style="text-align: center;">
+    <div class="col-md-4">
+        <form asp-action="searchflights" style="text-align: center;">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            
+            <div class="form-group" style="text-align: center;">
+                <label id="From" class="control-label"></label>
+                <input style="text-align: center;" id="From" name="From" class="form-control" placeholder="From"/>
+               
+            </div>
+            <div class="form-group" style="text-align: center;">
+                <label id="To" class="control-label"></label>
+                <input style="text-align: center;" id="To" name="To" type="text" class="form-control" placeholder="To"/>
+               
+            </div>
+            <div class="form-group">
+                <input style="text-align: center;" type="submit" value="Search" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<br>
+<h1><a asp-action="GetAllFlights" class="btn btn-dark">get the flight details</a></h1>
+<br>
+
+<br>
+<h1><a asp-action="GetAllBookings" class="btn btn-primary">get your booking details</a></h1>
+</div>

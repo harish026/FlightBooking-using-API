@@ -1,0 +1,67 @@
+@model IEnumerable<Flightbookingapi.Models.Book>
+
+@{
+    Layout="/Views/Shared/_CustomerLayout.cshtml";
+    ViewData["Title"] = "GetAllBookings";
+}
+<style>
+    body{
+        background-color: aliceblue;
+        text-align: center;
+    }
+     table{
+        width: 100%;
+        border: skyblue 2px solid;
+    }
+</style>
+
+<h1>All Bookings</h1>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Bid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nop)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Amount)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Bid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nop)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Amount)
+            </td>
+            @* <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td> *@
+        </tr>
+}
+    </tbody>
+</table>

@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = routeapi
-build_property.ProjectDir = c:\Users\h.a.cme5\Desktop\new\routeapi\
+build_property.ProjectDir = c:\Users\h.a.cme5\Desktop\FlightBooking-using-API\routeapi\

@@ -1,0 +1,47 @@
+@model IEnumerable<Flightbookingapi.Models.customer>
+
+@{
+    Layout="/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "GetAllCustomers";
+}
+<style>
+    body{
+        background-color: aliceblue;
+        font-family: sans-serif;
+    }
+    h1,p{
+        text-align: center;
+    }
+    table{
+        width: 100%;
+        border: skyblue 2px solid;
+    }
+</style>
+
+<h1>Details of All Customers</h1>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Customerid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Customername)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Customerid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Customername)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,13 @@
+@{
+    Layout="/Views/Shared/_CustomerLayout.cshtml";
+}
+
+<style>
+    body{
+        background-color: aliceblue;
+    }
+</style>
+<h3>Sorry !!! your booking is unsuccessfull</h3>
+
+<h4>available tickets are @ViewBag.fcap</h4>
+<h4>your required seats are @ViewBag.bnop which are greater than the available tickets</h4>

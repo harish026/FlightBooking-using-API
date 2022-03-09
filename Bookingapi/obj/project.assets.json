@@ -5555,11 +5555,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\h.a.cme5\\Desktop\\dotnet practise\\Bookingapi\\Bookapi.csproj",
+      "projectUniqueName": "C:\\Users\\h.a.cme5\\Desktop\\FlightBooking-using-API\\Bookingapi\\Bookapi.csproj",
       "projectName": "Bookapi",
-      "projectPath": "C:\\Users\\h.a.cme5\\Desktop\\dotnet practise\\Bookingapi\\Bookapi.csproj",
+      "projectPath": "C:\\Users\\h.a.cme5\\Desktop\\FlightBooking-using-API\\Bookingapi\\Bookapi.csproj",
       "packagesPath": "C:\\Users\\h.a.cme5\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\h.a.cme5\\Desktop\\dotnet practise\\Bookingapi\\obj\\",
+      "outputPath": "C:\\Users\\h.a.cme5\\Desktop\\FlightBooking-using-API\\Bookingapi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\h.a.cme5\\AppData\\Roaming\\NuGet\\NuGet.Config"
