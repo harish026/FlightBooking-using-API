@@ -208,17 +208,7 @@ namespace Flightbookingapi.Controllers{
                 }
             }
             b1.Amount=b1.Nop*f1.Price;
-            // if(b1.Nop<=0){
-            //     ViewBag.no="passangers count must be greater than 0";
-            //     return View();
-            // }
-            // else if(f1.Seat>=b1.Nop){
-            //     HttpContext.Session.SetInt32("fcap",f1.Seat);
-            //     HttpContext.Session.SetInt32("bnop",b1.Nop);
-            //     ViewBag.fcap="available tickets are "+f1.Seat+" which are less than the requirement "+ b1.Nop;
-            //     ViewBag.bnop=b1.Nop;
-            //     return View();
-            // }
+            
             try{
                 checkbook(f1,b1);
             }

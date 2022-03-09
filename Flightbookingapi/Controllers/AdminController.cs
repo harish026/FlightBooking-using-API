@@ -40,15 +40,6 @@ namespace Flightbookingapi.Controllers
                 return View();
             }
             return RedirectToAction("home");
-            // if(ad.name=="admin" && ad.password=="1234"){
-            //     HttpContext.Session.SetInt32("aid",12);
-            //     HttpContext.Session.SetString("adname","admin");
-            //     return RedirectToAction("home");
-            // }
-            // else{
-            //     ViewBag.loginerr="invalid username or password";
-            //     return View();
-            // }
         }
          public IActionResult home(){
              if(HttpContext.Session.GetInt32("aid")==null){
